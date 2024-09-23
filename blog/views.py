@@ -12,7 +12,6 @@ def get_published_posts(category=None):
     )
     if category:
         posts = posts.filter(category=category)
-    
     return posts.order_by('-pub_date')
 
 
